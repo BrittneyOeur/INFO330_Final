@@ -1,5 +1,10 @@
 # INFO 330: Database Systems and Data Modeling
 ## Group Project
+### Team:
+- Brittney Oeur
+- Maisara Mackeen
+- Nessa Choi
+
 ### Purpose
 The purpose of this project is to give you hands-on experience in database development. The process of database development goes through phases from conceptual design to implementation and maintenance of the database. The design phase can particularly be very challenging since it is less structured. Specifically, the project will reinforce the following learning objectives:
 - Evaluate the information needs of the target organization, and effectively model the data using the entity-relationship model and the relational model.
@@ -36,4 +41,24 @@ We also will have to keep track of the transactions during ticket reservations a
 - FoodStand: PK: FoodStand_ID, FK: Attraction_ID, Food_Stand_Name, Allergy_Type
 - Food_Transaction: PK FK: Transaction_ID, PK FK: FoodStand_ID, Num_Food
 - Ride Transaction: PK FK: Transaction_ID, PK FK: Ride_ID, Ticket_Sold
+
+## Business Rules
+- A customer can generate many invoices (engage in multiple transactions, such as buying tickets for rides and food)
+- Many customers visit and interact with many attractions, and attractions can have multiple customers
+- Employees can facilitate multiple transactions (ex: Selling tickets to multiple customers)
+- Only one employee can facilitate a single transaction
+- Many customers can interact with many employees
+- Employees can operate and manage multiple attractions, and attractions may require the presence of multiple employees
+- Transaction can occur at any type of attractions
+- Each attraction may be associated with multiple transactions, as multiple customers may use transactions to access it (such as going on rides and buying food at stands)
+- Different attractions can encompass various sub-entities (such as various rides and food stands)
+- Transactions can involve multiple sub-entities, and each sub-entity can be part of multiple transactions (such as a single transaction may include tickets for a ride and food).
+- Each employee typically has one set of contact information
+
+## Preliminary Conceptual Model:
+![unnamed (1)](https://github.com/BrittneyOeur/INFO330_Final/assets/72583051/599d16f7-d280-4614-81b0-94762ea2b719)
+
+## Logical Data Modeling:
+![unnamed (2)](https://github.com/BrittneyOeur/INFO330_Final/assets/72583051/99bea506-2982-4931-a2a4-1f018c0924c0)
+
 
