@@ -10,7 +10,7 @@ The purpose of this project is to give you hands-on experience in database devel
 - Evaluate the information needs of the target organization, and effectively model the data using the entity-relationship model and the relational model.
 - Design and implement a physical model based on principles of relational database design, and the organization’s needs regarding data, data organization, and data storage.
 - Develop working SQL statements for simple and intermediate queries to create and modify data and database objects to store, manipulate, and analyze company data.
-
+<br>
 ## Fictitious Carnival Business Model
 
 ## Description of The Business/Organization
