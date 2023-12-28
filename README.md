@@ -1,4 +1,4 @@
-# INFO 330: Database Systems and Data Modeling
+# INFO 330: Database Systems and Data Modeling (FINAL)
 ## Group Project
 ### Team:
 - Brittney Oeur
