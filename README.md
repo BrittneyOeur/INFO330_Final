@@ -29,18 +29,18 @@ We also will have to keep track of the transactions during ticket reservations a
 
 ## Entities List
 ### Main Entities
-- Customer: PK FK: Customer_ID, Number_of_Tickets
-- Employee: PK FK: Employee_ID, Job_Title, Hourly_Rate, Hiring_Date, Employment_End_Date 
-- Attraction: PK: Attraction_ID, Attraction_Type, Attraction_Cost, Height_Requirement, Attraction_Capacity
-- Attraction_Assignment: PK: Assignment_ID, FK: Employee_ID, FK: Attraction_ID, Num_of_Hours
-- Transaction: PK: Transaction_ID, FK: Customer_ID, FK: Employee_ID, Total_Amount, Payment_Method, Transaction_Date, Transaction_Time
+- **Customer:** PK FK: Customer_ID, Number_of_Tickets
+- **Employee:** PK FK: Employee_ID, Job_Title, Hourly_Rate, Hiring_Date, Employment_End_Date 
+- **Attraction:** PK: Attraction_ID, Attraction_Type, Attraction_Cost, Height_Requirement, Attraction_Capacity
+- **Attraction_Assignment:** PK: Assignment_ID, FK: Employee_ID, FK: Attraction_ID, Num_of_Hours
+- **Transaction:** PK: Transaction_ID, FK: Customer_ID, FK: Employee_ID, Total_Amount, Payment_Method, Transaction_Date, Transaction_Time
 
 ### Sub Entities
-- Contact: PK: Person_ID, First_Name, Last_Name. Phone_Number. Email_Address
-- Ride: PK: Ride_ID, FK: Attraction_ID, Type, Name, Ride_Pass
-- FoodStand: PK: FoodStand_ID, FK: Attraction_ID, Food_Stand_Name, Allergy_Type
-- Food_Transaction: PK FK: Transaction_ID, PK FK: FoodStand_ID, Num_Food
-- Ride Transaction: PK FK: Transaction_ID, PK FK: Ride_ID, Ticket_Sold
+- **Contact:** PK: Person_ID, First_Name, Last_Name. Phone_Number. Email_Address
+- **Ride:** PK: Ride_ID, FK: Attraction_ID, Type, Name, Ride_Pass
+- **FoodStand:** PK: FoodStand_ID, FK: Attraction_ID, Food_Stand_Name, Allergy_Type
+- **Food_Transaction:** PK FK: Transaction_ID, PK FK: FoodStand_ID, Num_Food
+- **Ride Transaction:** PK FK: Transaction_ID, PK FK: Ride_ID, Ticket_Sold
 
 ## Business Rules
 - A customer can generate many invoices (engage in multiple transactions, such as buying tickets for rides and food)
